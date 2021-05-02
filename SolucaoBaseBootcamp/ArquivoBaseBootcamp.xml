@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArquivoBaseBootcamp</name>
+    </assembly>
+    <members>
+        <member name="M:ArquivoBaseBootcamp.Controllers.BootcampController.CadastrarInteressado">
+            <summary>
+             Este endpoint deve realizar o cadastro de um interessado
+            </summary>
+            <param name="cadastrar"></param>  
+        </member>
+        <member name="M:ArquivoBaseBootcamp.Controllers.BootcampController.ConsultarInteressado">
+            <summary>
+            Este endpoint deve consultar as interessadas cadastradas
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

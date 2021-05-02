@@ -1,0 +1,73 @@
+Larissa Moreira Sydorak
+
+larissasydorak10@gmail.com
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Não consegui entender muito bem a sintaxe do C#, então boa parte da lógica que eu pensei estão comentados//em pseudocódigo no arquivo
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Método Incluir()
+
+
+Interessada Incluir(Interessada interessada)
+
+adiciona o item interessada (dados de uma candidata) do objeto Interessada (objeto com caracterísitcas Nome e Email) e retorna (através do Controllers, por AdicionarInteresse() ) o próprio item adicionado.
+
+Se o email ou o nome não forem validados, o retorno é 400 (Bad Request)
+
+Verificações do nome e e-mail
+* Nome tem espaço (Coletar ao menos um sobrenome)
+* E-mail tem @
+* E-mail não tem espaço
+* Nome e e-mail não são vazios
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Método ConsultarPorEmail()
+
+
+Interessada ConsultarPorEmail(string email)
+
+
+verifica a partir do email se ele foi registrado, e caso tenha sido, retorna (através do Controllers, por ConsultarInteresse() ) os dados da interessada cadastrada com esse email.
+
+Se o email não for encontrado, o retorno é  404 (Not Found).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Método ConsultarTodos()
+
+
+Retorna (através do Controllers, por ConsultarTodosInteresses() ) a lista de dados cadastrados das interessadas.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Método AtualizarEmail()
+
+
+Interessada AtualizarEmail(string email, Interessada interessada)
+
+Recebe um email e os dados de uma interessada cadastrada para a atualização do email. Retorna (através do Controllers, por AtualizarInteresse() ) os dados atualizados da interessada.
+
+Se a interessada não for encontrada na lista de dados o retorno é 404 (Not Found), e se o novo email não for válido, o retorno é 
+400 (Bad Request).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Método ExcluirPorEmail()
+
+
+bool ExcluirPorEmail(string email) 
+
+Recebe um email, procura uma interessada cadastrada com esse email e exclui seu cadastro. Retorna (através do Controllers, por ExcluirInteresse() ) true se os dados foram excluídos, ou falso caso tenha havido algum problema.
+
+Se o email a interessada não for encontrado na lista de dados o retorno é 404 (Not Found).
+
+
+
+
